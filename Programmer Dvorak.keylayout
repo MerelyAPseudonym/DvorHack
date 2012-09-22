@@ -74,9 +74,9 @@
 	  <key code="19"  output="["/>			<!-- left pinky 1 	-->
 	  <key code="20"  output="{"/>			<!-- left ring 		-->	  
 	  <key code="21"  output="}"/>			<!-- left middle 	-->
-	  <key code="23"  output="("/>			<!-- left index 1 	-->
+	  <key code="23"  action="lparen"/>		<!-- left index 1 	-->
 	  <key code="22"  output="="/>			<!-- left index 2 	-->
-	  <key code="26"  output="*"/>			<!-- right index 2 	-->
+	  <key code="26"  action="asterisk"/>	<!-- right index 2 	-->
 	  <key code="28"  output=")"/>			<!-- right index 1 	-->
 	  <key code="25"  output="+"/>			<!-- right middle 	-->
 	  <key code="29"  output="]"/>			<!-- right ring 	-->
@@ -86,9 +86,9 @@
 
 	  <!-- top row -->
 	  <key code="48"  output="&#x09;"/>		<!-- Tab 			-->
-	  <key code="12"  output=";"/>			<!-- left pinky 	-->
+	  <key code="12"  action="semi"/>		<!-- left pinky 	-->
 	  <key code="13"  action="comma"/>		<!-- left ring 		-->	  
-	  <key code="14"  output="."/>			<!-- left middle 	-->
+	  <key code="14"  action="period"/>		<!-- left middle 	-->
 	  <key code="15"  output="p"/>			<!-- left index 1 	-->
 	  <key code="17"  action="y"/>			<!-- left index 2 	-->
 	  <key code="16"  output="f"/>			<!-- right index 2 	-->
@@ -96,8 +96,8 @@
 	  <key code="34"  action="c"/>			<!-- right middle 	-->
 	  <key code="31"  action="r"/>			<!-- right ring 	-->
 	  <key code="35"  action="l"/>			<!-- right pinky 1 	-->
-	  <key code="33"  output="/"/>			<!-- right pinky 2 	-->
-	  <key code="30"  output="@"/>			<!-- right pinky 3 	-->
+	  <key code="33"  action="slash"/>		<!-- right pinky 2 	-->
+	  <key code="30"  action="at"/>			<!-- right pinky 3 	-->
 	  
 	  <!-- home row -->
 	  <!--key code="57"  output=""/>		<! Caps Lock 		-->
@@ -117,13 +117,18 @@
 
 	  <!-- bottom row -->
 	  <!--key code="56"  output=""/>		<! Left Shift 		-->
+	  <!-- even though this key is not here on actual ANSI keyboards
+	       we add a binding here for keyboards which physically have
+	       ISO layout but are mis-classified (VMware Fusion)
+	  -->
+	  <key code="10"  action="compose"/>
 	  <key code="6"   action="apostrophe"/>	<!-- left pinky 	-->
 	  <key code="7"   output="q"/>			<!-- left ring 		-->	  
 	  <key code="8"   action="j"/>			<!-- left middle 	-->
 	  <key code="9"   action="k"/>			<!-- left index 1 	-->
 	  <key code="11"  output="x"/>			<!-- left index 2 	-->
 	  <key code="45"  output="b"/>			<!-- right index 2 	-->
-	  <key code="46"  output="m"/>			<!-- right index 1 	-->
+	  <key code="46"  action="m"/>			<!-- right index 1 	-->
 	  <key code="43"  output="w"/>			<!-- right middle 	-->
 	  <key code="47"  output="v"/>			<!-- right ring 	-->
 	  <key code="44"  action="z"/>			<!-- right pinky 	-->
@@ -201,7 +206,7 @@
 	  <key code="21"  output="3"/>			<!-- left middle 	-->
 	  <key code="23"  output="1"/>			<!-- left index 1	-->
 	  <key code="22"  output="9"/>			<!-- left index 2 	-->
-	  <key code="26"  output="0"/>			<!-- right index 2 	-->
+	  <key code="26"  action="zero"/>		<!-- right index 2 	-->
 	  <key code="28"  output="2"/>			<!-- right index 1 	-->
 	  <key code="25"  output="4"/>			<!-- right middle 	-->
 	  <key code="29"  output="6"/>			<!-- right ring 	-->
@@ -211,9 +216,9 @@
 
 	  <!-- top row -->
 	  <key code="48"  output="&#x09;"/>		<!-- Tab 			--><!--*-->	  
-	  <key code="12"  output=":"/>			<!-- left pinky 	-->
-	  <key code="13"  output="&#x3C;"/>	<!-- left ring 		-->	  
-	  <key code="14"  output=">"/>			<!-- left middle 	-->
+	  <key code="12"  action="colon"/>		<!-- left pinky 	-->
+	  <key code="13"  action="less"/>		<!-- left ring 		-->
+	  <key code="14"  action="greater"/>	<!-- left middle 	-->
 	  <key code="15"  output="P"/>			<!-- left index 1 	-->
 	  <key code="17"  output="Y"/>			<!-- left index 2 	-->
 	  <key code="16"  output="F"/>			<!-- right index 2 	-->
@@ -241,14 +246,19 @@
 	  <key code="36"  output="&#x0D;"/>		<!-- Return 		--><!--*-->	  
 
 	  <!-- bottom row -->
-	  <!--key code="56"  output=""/>		<! Left Shift 		--><!--*-->	  
+	  <!--key code="56"  output=""/>		<! Left Shift 		--><!--*-->
+	  <!-- compose action is not affected by Shift; allows us to
+	       prematurely press the modifier before hitting the next
+	       key without altering the outcome
+	  -->
+	  <key code="10"  action="compose"/>
 	  <key code="6"   action="quote"/>		<!-- left pinky 	-->
 	  <key code="7"   output="Q"/>			<!-- left ring 		-->	  
 	  <key code="8"   action="J"/>			<!-- left middle 	-->
 	  <key code="9"   action="K"/>			<!-- left index 1 	-->
 	  <key code="11"  output="X"/>			<!-- left index 2 	-->
 	  <key code="45"  output="B"/>			<!-- right index 2 	-->
-	  <key code="46"  output="M"/>			<!-- right index 1 	-->
+	  <key code="46"  action="M"/>			<!-- right index 1 	-->
 	  <key code="43"  output="W"/>			<!-- right middle 	-->
 	  <key code="47"  output="V"/>			<!-- right ring 	-->
 	  <key code="44"  action="Z"/>			<!-- right pinky 	-->
@@ -263,7 +273,7 @@
 	  <key code="91"  output="B"/>			<!-- Num 8 			-->
 	  <key code="92"  output="C"/>			<!-- Num 9 			-->
 	  <key code="78"  output=","/>			<!-- Num - 			-->
-	  <key code="86"  action="D"/>			<!-- Num 4 			-->
+	  <key code="86"  output="D"/>			<!-- Num 4 			-->
 	  <key code="87"  output="E"/>			<!-- Num 5 			-->
 	  <key code="88"  output="F"/>			<!-- Num 6 			-->
 	  <key code="69"  output=","/>			<!-- Num + 			-->
@@ -326,7 +336,7 @@
 	  <key code="21"  output="3"/>			<!-- left middle 	-->
 	  <key code="23"  output="1"/>			<!-- left index 1	-->
 	  <key code="22"  output="9"/>			<!-- left index 2 	-->
-	  <key code="26"  output="0"/>			<!-- right index 2 	-->
+	  <key code="26"  action="zero"/>		<!-- right index 2 	-->
 	  <key code="28"  output="2"/>			<!-- right index 1 	-->
 	  <key code="25"  output="4"/>			<!-- right middle 	-->
 	  <key code="29"  output="6"/>			<!-- right ring 	-->
@@ -336,9 +346,9 @@
 
 	  <!-- top row -->
 	  <key code="48"  output="&#x09;"/>		<!-- Tab 			-->
-	  <key code="12"  output=";"/>			<!-- left pinky 	--><!--+-->
+	  <key code="12"  action="semi"/>		<!-- left pinky 	--><!--+-->
 	  <key code="13"  action="comma"/>		<!-- left ring 		--><!--+-->
-	  <key code="14"  output="."/>			<!-- left middle 	--><!--+-->
+	  <key code="14"  action="period"/>		<!-- left middle 	--><!--+-->
 	  <key code="15"  output="P"/>			<!-- left index 1 	-->
 	  <key code="17"  output="Y"/>			<!-- left index 2 	-->
 	  <key code="16"  output="F"/>			<!-- right index 2 	-->
@@ -346,8 +356,8 @@
 	  <key code="34"  action="C"/>			<!-- right middle 	-->
 	  <key code="31"  action="R"/>			<!-- right ring 	-->
 	  <key code="35"  action="L"/>			<!-- right pinky 1 	-->
-	  <key code="33"  output="/"/>			<!-- right pinky 2 	--><!--+-->
-	  <key code="30"  output="@"/>			<!-- right pinky 3 	--><!--+-->
+	  <key code="33"  action="slash"/>		<!-- right pinky 2 	--><!--+-->
+	  <key code="30"  action="at"/>			<!-- right pinky 3 	--><!--+-->
 	  
 	  <!-- home row -->
 	  <!--key code="57"  output=""/>		<! Caps Lock 		-->
@@ -367,13 +377,14 @@
 
 	  <!-- bottom row -->
 	  <!--key code="56"  output=""/>		<! Left Shift 		-->
+	  <key code="10"  action="compose"/>
 	  <key code="6"   action="apostrophe"/>	<!-- left pinky 	--><!--+-->
 	  <key code="7"   output="Q"/>			<!-- left ring 		-->	  
 	  <key code="8"   action="J"/>			<!-- left middle 	-->
 	  <key code="9"   action="K"/>			<!-- left index 1 	-->
 	  <key code="11"  output="X"/>			<!-- left index 2 	-->
 	  <key code="45"  output="B"/>			<!-- right index 2 	-->
-	  <key code="46"  output="M"/>			<!-- right index 1 	-->
+	  <key code="46"  action="M"/>			<!-- right index 1 	-->
 	  <key code="43"  output="W"/>			<!-- right middle 	-->
 	  <key code="47"  output="V"/>			<!-- right ring 	-->
 	  <key code="44"  action="Z"/>			<!-- right pinky 	-->
@@ -442,6 +453,10 @@
 	  <key code="124" output="&#x1D;"/>		<!-- Right 			-->	  
 	</keyMap>	  
   </keyMapSet>
+  <!-- difference between ANSI and ISO layout is the extra key which
+       is mapped to Compose in Programmer Dvorak (the physical layout
+       also varies, but that is irrelevant to the symbol driver)
+  -->
   <keyMapSet id="ISO">
 	<keyMap index="0" baseMapSet="ANSI" baseIndex="0">
 	  <key code="10"  output="&#x24;"/>
@@ -493,6 +508,8 @@
 	<action id="apostrophe">
 	  <when state="none" 		output="'" />
 	  <when state="compose" 	next="acute" />
+	  <when state="less"		output="&#x2018;" />
+	  <when state="greater"		output="&#x2019;" />
 	</action>
 	<action id="caret">
 	  <when state="none" 		output="^" />
@@ -505,6 +522,8 @@
 	<action id="quote">
 	  <when state="none" 		output="&#x22;" />
 	  <when state="compose" 	next="diaeresis" />
+	  <when state="less"		output="&#x201C;" />
+	  <when state="greater"		output="&#x201D;" />
 	</action>
 	<action id="comma">
 	  <when state="none" 		output="," />
@@ -512,15 +531,49 @@
 	</action>
 	<action id="dash">
 	  <when state="none" 		output="-" />
-	  <when state="compose" 	output="macron" />
+	  <when state="compose" 	next="macron" />
+	  <when state="dot"         output="&#xB7;" />
+	</action>
+	<action id="asterisk">
+	  <when state="none" 		output="*" />
+	  <when state="compose" 	next="ring" />
+	</action>
+	<action id="slash">
+	  <when state="none" 		output="/" />
+	  <when state="compose" 	next="stroke" />
+	</action>
+	<action id="lparen">
+	  <when state="none" 		output="(" />
+	  <when state="compose" 	next="breve" />
+	</action>
+	<action id="period">
+	  <when state="none" 		output="." />
+	  <when state="compose" 	next="dot" />
+	  <when state="dot"         output="&#x2026;" />
+	</action>
+	<action id="at">
+	  <when state="none" 		output="@" />
+	  <when state="compose" 	next="alig" />
+	</action>
+	<action id="colon">
+	  <when state="none" 		output=":" />
+	  <when state="compose" 	next="diaeresis" />
+	</action>
+	<action id="semi">
+	  <when state="none" 		output=";" />
+	  <when state="compose" 	next="diaeresis" />
 	</action>
 	<action id="A">
 	  <when state="none" 		output="A" />
+	  <when state="compose"		next="alig" />
 	  <when state="grave" 		output="&#xC0;" />
 	  <when state="acute" 		output="&#xC1;" />
 	  <when state="circum" 		output="&#xC2;" />
 	  <when state="nasal" 		output="&#xC3;" />
 	  <when state="diaeresis" 	output="&#xC4;" />
+	  <when state="macron"		output="&#x0100;" />
+	  <when state="ring"		output="&#xC5;" />
+	  <when state="alig"		output="&#xC5;" />
 	</action>
 	<action id="E">
 	  <when state="none" 		output="E" />
@@ -528,6 +581,7 @@
 	  <when state="acute" 		output="&#xC9;" />
 	  <when state="circum" 		output="&#xCA;" />
 	  <when state="diaeresis" 	output="&#xCB;" />
+	  <when state="alig"		output="&#xC6;" />
 	</action>
 	<action id="I">
 	  <when state="none" 		output="I" />
@@ -538,11 +592,14 @@
 	</action>
 	<action id="O">
 	  <when state="none" 		output="O" />
+	  <when state="compose"		next="ring" />
 	  <when state="grave" 		output="&#xD2;" />
 	  <when state="acute" 		output="&#xD3;" />
 	  <when state="circum" 		output="&#xD4;" />
 	  <when state="nasal" 		output="&#xD5;" />
 	  <when state="diaeresis" 	output="&#xD6;" />
+	  <when state="stroke"		output="&#xD8;" />
+	  <when state="caron"       output="&#xA9;" />
 	</action>
 	<action id="U">
 	  <when state="none" 		output="U" />
@@ -553,11 +610,15 @@
 	</action>
 	<action id="a">
 	  <when state="none" 		output="a" />
+	  <when state="compose"		next="alig" />
 	  <when state="grave" 		output="&#xE0;" />
 	  <when state="acute" 		output="&#xE1;" />
 	  <when state="circum" 		output="&#xE2;" />
 	  <when state="nasal" 		output="&#xE3;" />
 	  <when state="diaeresis" 	output="&#xE4;" />
+	  <when state="macron"		output="&#x0101;" />
+	  <when state="ring"		output="&#xE5;" />
+	  <when state="alig"		output="&#xE5;" />
 	</action>
 	<action id="e">
 	  <when state="none" 		output="e" />
@@ -565,6 +626,7 @@
 	  <when state="acute" 		output="&#xE9;" />
 	  <when state="circum" 		output="&#xEA;" />
 	  <when state="diaeresis" 	output="&#xEB;" />
+	  <when state="alig"		output="&#xE6;" />
 	</action>
 	<action id="i">
 	  <when state="none" 		output="i" />
@@ -575,11 +637,14 @@
 	</action>
 	<action id="o">
 	  <when state="none" 		output="o" />
+	  <when state="compose"		next="ring" />
 	  <when state="grave" 		output="&#xF2;" />
 	  <when state="acute" 		output="&#xF3;" />
 	  <when state="circum" 		output="&#xF4;" />
 	  <when state="nasal" 		output="&#xF5;" />
 	  <when state="diaeresis" 	output="&#xF6;" />
+	  <when state="stroke"		output="&#xF8;" />
+	  <when state="caron"       output="&#xA9;" />
 	</action>
 	<action id="u">
 	  <when state="none" 		output="u" />
@@ -599,10 +664,12 @@
 	</action>
 	<action id="C">
 	  <when state="none" 		output="C" />
+	  <when state="compose"		next="caron" />
 	  <when state="cedilla" 	output="&#xC7;" />
 	</action>
 	<action id="c">
 	  <when state="none" 		output="c" />
+	  <when state="compose"		next="caron" />
 	  <when state="cedilla" 	output="&#xE7;" />
 	</action>
 	<action id="N">
@@ -633,46 +700,79 @@
 	</action>
 	<action id="S">
 	  <when state="none" 		output="S" />
+	  <when state="compose"		next="ssharp" />
+	  <when state="dot"			output="&#x0218;" />
 	</action>
 	<action id="s">
 	  <when state="none" 		output="s" />
+	  <when state="compose"		next="ssharp" />
+	  <when state="dot"			output="&#x0219;" />
 	</action>
 	<action id="T">
 	  <when state="none" 		output="T" />
+	  <when state="compose"		next="thorn" />
+	  <when state="dot"			output="&#x021A;" />
 	</action>
 	<action id="t">
 	  <when state="none" 		output="t" />
+	  <when state="compose"		next="thorn" />
+	  <when state="dot"			output="&#x021B;" />
 	</action>
 	<action id="D">
 	  <when state="none" 		output="D" />
-	</action>	
+	  <when state="compose"		next="eth" />
+	</action>
 	<action id="d">
 	  <when state="none" 		output="d" />
-	</action>	
+	  <when state="compose"		next="eth" />
+	</action>
 	<action id="R">
 	  <when state="none" 		output="R" />
-	</action>	
+	</action>
 	<action id="r">
 	  <when state="none" 		output="r" />
-	</action>	
+	</action>
 	<action id="Z">
 	  <when state="none" 		output="Z" />
-	</action>	
+	</action>
 	<action id="z">
 	  <when state="none" 		output="z" />
-	</action>	
+	</action>
 	<action id="H">
 	  <when state="none" 		output="H" />
-	</action>	
+	</action>
 	<action id="h">
 	  <when state="none" 		output="h" />
-	</action>	
+	</action>
 	<action id="J">
 	  <when state="none" 		output="J" />
-	</action>	
+	</action>
 	<action id="j">
 	  <when state="none" 		output="j" />
-	</action>	
+	</action>
+	<action id="M">
+	  <when state="none" 		output="M" />
+	  <when state="thorn"       output="&#x2122;" />
+	</action>
+	<action id="m">
+	  <when state="none"		output="m" />
+	</action>
+	<action id="zero">
+	  <when state="none"		output="0" />
+	  <when state="stroke"		output="&#x221E;" />
+	</action>
+	<action id="less">
+	  <when state="none"		output="&#x3C;" />
+	  <when state="compose"		next="less" />
+	  <when state="diaeresis"	output="&#x201C;" />
+	  <when state="acute"		output="&#x2018;" />
+	</action>
+	<action id="greater">
+	  <when state="none"		output=">" />
+	  <when state="compose"		next="greater" />
+	  <when state="diaeresis"	output="&#x201D;" />
+	  <when state="acute"		output="&#x2019;" />
+	</action>
 	<!-- same as the terminator table below -->
 	<action id="space">
 	  <when state="none" 		output=" " />
@@ -682,6 +782,18 @@
 	  <when state="nasal" 		output="&#x2DC;" />
 	  <when state="diaeresis" 	output="&#xA8;" />
 	  <when state="cedilla" 	output="&#xB8;" />
+	  <when state="macron" 		output="-" />
+	  <when state="caron" 		output="c" />
+	  <when state="ring" 		output="o" />
+	  <when state="stroke" 		output="/" />
+	  <when state="breve" 		output="(" />
+	  <when state="dot" 		output="." />
+	  <when state="alig" 		output="a" />
+	  <when state="eth" 		output="e" />
+	  <when state="thorn" 		output="t" />
+	  <when state="ssharp" 		output="s" />
+	  <when state="less"		output="&#x3C;" />
+	  <when state="greater"		output=">" />
 	</action>
   </actions>
   <terminators>
@@ -692,5 +804,17 @@
 	<when state="nasal" 		output="&#x2DC;" />
 	<when state="diaeresis" 	output="&#xA8;" />
 	<when state="cedilla" 		output="&#xB8;" />
+	<when state="macron" 		output="-" />
+	<when state="caron" 		output="c" />
+	<when state="ring"			output="o" />
+	<when state="stroke" 		output="/" />
+	<when state="breve" 		output="&#x02D8;" />
+	<when state="dot"			output="&#x02D9;" />
+	<when state="alig"			output="a" />
+	<when state="eth"			output="d" />
+	<when state="thorn"			output="t" />
+	<when state="ssharp"		output="s" />
+	<when state="less"			output="&#x3C;" />
+	<when state="greater"		output=">" />
   </terminators>
 </keyboard>
