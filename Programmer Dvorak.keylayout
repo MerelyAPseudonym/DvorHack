@@ -64,9 +64,27 @@
 	<keyMapSelect mapIndex="2">
 	  <modifier keys="caps" />
 	</keyMapSelect>
+	<!-- option -->
+	<!--keyMapSelect mapIndex="3">
+	  <modifier keys="anyOption" />
+	  <modifier keys="anyOption anyShift caps" />
+	  <modifier keys="anyOption command anyShift? caps?" />
+	</keyMapSelect-->
+	<!-- option + shift -->
+	<!--keyMapSelect mapIndex="4">
+	  <modifier keys="anyOption anyShift" />
+	</keyMapSelect>
+	<keyMapSelect mapIndex="5">
+	  <modifier keys="anyOption caps" />
+	</keyMapSelect-->
+	<!-- control + anything but command -->
+	<keyMapSelect mapIndex="3">
+	  <modifier keys="anyControl anyShift? caps? anyOption?" />
+	</keyMapSelect>
   </modifierMap>
   <keyMapSet id="ANSI">
 	<!-- keycodes can be found in HIToolbox/Events.h (prefixed kVK_ANSI_) -->
+	<!-- and http://lists.apple.com/archives/carbon-dev/2009/Jan/msg00101.html -->
 	<keyMap index="0">
 	  <!-- number row -->
 	  <key code="50"  output="&#x24;"/>	<!-- left pinky 3	-->
@@ -451,7 +469,54 @@
 	  <key code="123" output="&#x1C;"/>		<!-- Left 			-->
 	  <key code="125" output="&#x1F;"/>		<!-- Down 			-->
 	  <key code="124" output="&#x1D;"/>		<!-- Right 			-->	  
-	</keyMap>	  
+	</keyMap>
+	<!--keyMap index="3">
+	</keyMap>
+	<keyMap index="4">
+	</keyMap>
+	<keyMap index="5">
+	</keyMap-->
+	<keyMap index="3">
+	  <!-- number row -->
+	  <key code="19"  output="&#x1B;"/>		<!-- ctrl-[			-->
+	  <key code="29"  output="&#x1D;"/>		<!-- ctrl-]		 	-->
+	  <key code="51"  output="&#x7F;"/>		<!-- ctrl-Backspace -->
+
+	  <!-- top row -->
+	  <key code="15"  output="&#x10;"/>		<!-- ctrl-P		 	-->
+	  <key code="17"  output="&#x19;"/>		<!-- ctrl-Y		 	-->
+	  <key code="16"  output="&#x6;"/>		<!-- ctrl-F		 	-->
+	  <key code="32"  output="&#x7;"/>		<!-- ctrl-G		 	-->
+	  <key code="34"  output="&#x3;"/>		<!-- ctrl-C			-->
+	  <key code="31"  output="&#x12;"/>		<!-- ctrl-R		 	-->
+	  <key code="35"  output="&#xC;"/>		<!-- ctrl-L		 	-->
+	  <key code="30"  output="&#x0;"/>		<!-- ctrl-@		 	-->
+	  
+	  <!-- home row -->
+	  <key code="0"   output="&#x1;"/>		<!-- ctrl-A			-->
+	  <key code="1"   output="&#xF;"/>		<!-- ctrl-O 		-->	  
+	  <key code="2"   output="&#x5;"/>		<!-- ctrl-E		 	-->
+	  <key code="3"   output="&#x15;"/>		<!-- ctrl-U		 	-->
+	  <key code="5"   output="&#x9;"/>		<!-- ctrl-I		 	-->
+	  <key code="4"   output="&#x4;"/>		<!-- ctrl-D		 	-->
+	  <key code="38"  output="&#x8;"/>		<!-- ctrl-H		 	-->
+	  <key code="40"  output="&#x14;"/>		<!-- ctrl-T		 	-->
+	  <key code="37"  output="&#xE;"/>		<!-- ctrl-N		 	-->
+	  <key code="41"  output="&#x13;"/>		<!-- ctrl-S		 	-->
+	  <key code="39"  output="&#x1F;"/>		<!-- ctrl-_		 	-->
+	  <key code="42"  output="&#x1C;"/>		<!-- ctrl-\		 	-->
+
+	  <!-- bottom row -->
+	  <key code="7"   output="&#x11;"/>		<!-- ctrl-Q 		-->	  
+	  <key code="8"   output="&#xA;"/>		<!-- ctrl-J		 	-->
+	  <key code="9"   output="&#xB;"/>		<!-- ctrl-K		 	-->
+	  <key code="11"  output="&#x18;"/>		<!-- ctrl-X		 	-->
+	  <key code="45"  output="&#x2;"/>		<!-- ctrl-B			-->
+	  <key code="46"  output="&#xD;"/>		<!-- ctrl-M		 	-->
+	  <key code="43"  output="&#x17;"/>		<!-- ctrl-W		 	-->
+	  <key code="47"  output="&#x16;"/>		<!-- ctrl-V		 	-->
+	  <key code="44"  output="&#x1A;"/>		<!-- ctrl-Z		 	-->
+	</keyMap>
   </keyMapSet>
   <!-- difference between ANSI and ISO layout is the extra key which
        is mapped to Compose in Programmer Dvorak (the physical layout
