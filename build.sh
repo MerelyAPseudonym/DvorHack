@@ -1,6 +1,7 @@
 #!/bin/sh
 set -e -x
 LAYOUT="Programmer Dvorak"
+LANGUAGE=en
 VERSION=1.2
 COPYRIGHT="Copyright 1997--2012 (c) Roland Kaufmann"
 
@@ -20,6 +21,9 @@ pushd "$ROOT_DIR/Library/Keyboard Layouts"
 mkdir "$LAYOUT.bundle"
 mkdir "$LAYOUT.bundle/Contents"
 
+# Text Input Source Services keys by Jordan Rose
+# <http://belkadan.com/blog/2012/04/Keyboard-Adventures/>
+# see bottom of HIToolbox.framework/.../TextInputSources.h
 cat >> "$LAYOUT.bundle/Contents/Info.plist" <<EOF
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -28,6 +32,11 @@ cat >> "$LAYOUT.bundle/Contents/Info.plist" <<EOF
 <key>CFBundleIdentifier</key><string>com.apple.keyboardlayout.$LAYOUT</string>
 <key>CFBundleName</key><string>$LAYOUT</string>
 <key>CFBundleVersion</key><string>$VERSION</string>
+<key>KLInfo_$LAYOUT</key>
+  <dict>
+  <key>TISInputSourceID</key><string>com.apple.keyboardlayout.$LAYOUT</string>
+  <key>TISIntendedLanguage</key><string>$LANGUAGE-Latn</string>
+  </dict>
 </dict>
 </plist>
 EOF
@@ -60,15 +69,31 @@ NSHumanReadableCopyright = "$COPYRIGHT";
 "$LAYOUT" = "$LAYOUT";
 EOF
 
+# figure out where the /Developer directory is
+if [ -d /Applications/Xcode.app/Contents/Developer ]; then
+  DEVROOT=/Applications/Xcode.app/Contents
+else
+  DEVROOT=
+fi
+
+# try to figure out where PackageMaker from the Auxiliary Tools is
+if [ -d /Applications/Xcode.app/Contents/Applications/PackageMaker.app ]; then
+  APPROOT=/Applications/Xcode.app/Contents/Applications
+elif [ -d /Developer/Applications/Utilities/PackageMaker.app ]; then
+  APPROOT=/Developer/Application/Utilities
+else
+  APPROOT=/Applications
+fi
+
 # bundle bit must be set on the directory for it to be recognized as a bundle
-/Developer/Tools/SetFile -a B "$LAYOUT.bundle"
+$DEVROOT/Developer/Tools/SetFile -a B "$LAYOUT.bundle"
 
 # leave fakeroot
 popd
 
 # create a package
 # <http://www.manpagez.com/man/1/packagemaker/>
-/Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker \
+$APPROOT/PackageMaker.app/Contents/MacOS/PackageMaker \
   -v \
   -k \
   -r "$ROOT_DIR" \
@@ -100,7 +125,7 @@ ditto -c -k --noacl --sequesterRsrc "$LAYOUT.src" "$TRANSLATED.src.zip"
 
 # uninstall:
 # sudo rm -rf "/Library/Keyboard Layouts/$LAYOUT.bundle/"
-# sudo rm "/var/db/receipts/com.apple.keyboardlayout.$LAYOUT.*"
+# sudo pkgutil --forget com.apple.keyboardlayout.$LAYOUT
 # sudo rm /System/Library/Caches/com.apple.IntlDataCache.le*
 # rm /private/var/folders/*/*/-Caches-/com.apple.IntlDataCache.le*
 # sudo shutdown -r now
