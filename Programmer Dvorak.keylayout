@@ -32,20 +32,20 @@
 	</modifierMap>
 	<keyMapSet id="312">
 		<keyMap index="0">
-			<key code="0" action="a11" />
-			<key code="1" action="a14" />
-			<key code="2" action="a12" />
-			<key code="3" action="a15" />
+			<key code="0" action="a" />
+			<key code="1" action="o" />
+			<key code="2" action="e" />
+			<key code="3" action="u" />
 			<key code="4" output="d" />
-			<key code="5" action="a13" />
-			<key code="6" output="'" />
+			<key code="5" action="i" />
+			<key code="6" action="apostrophe" />
 			<key code="7" output="q" />
 			<key code="8" output="j" />
 			<key code="9" output="k" />
 			<key code="10" output="&#x24;" />
 			<key code="11" output="x" />
 			<key code="12" output=";" />
-			<key code="13" output="," />
+			<key code="13" action="comma" />
 			<key code="14" output="." />
 			<key code="15" output="p" />
 			<key code="16" output="f" />
@@ -66,10 +66,10 @@
 			<key code="31" output="r" />
 			<key code="32" output="g" />
 			<key code="33" output="/" />
-			<key code="34" output="c" />
+			<key code="34" action="c" />
 			<key code="35" output="l" />
 			<key code="36" output="&#xD;" />
-			<key code="37" action="a18" />
+			<key code="37" action="n" />
 			<key code="38" output="h" />
 			<key code="39" output="-" />
 			<key code="40" output="t" />
@@ -81,8 +81,8 @@
 			<key code="46" output="m" />
 			<key code="47" output="v" />
 			<key code="48" output="&#x9;" />
-			<key code="49" action="a16" />
-			<key code="50" output="$" />
+			<key code="49" action="space" />
+			<key code="50" action="compose" />
 			<key code="51" output="&#x8;" />
 			<key code="52" output="&#x3;" />
 			<key code="53" output="&#x1B;" />
@@ -121,9 +121,9 @@
 			<key code="99" output="&#x10;" />
 			<key code="100" output="&#x10;" />
 			<key code="101" output="&#x10;" />
-			<key code="102" action="a16" />
+			<key code="102" action="space" />
 			<key code="103" output="&#x10;" />
-			<key code="104" action="a16" />
+			<key code="104" action="space" />
 			<key code="105" output="&#x10;" />
 			<key code="106" output="&#x10;" />
 			<key code="107" output="&#x10;" />
@@ -148,17 +148,17 @@
 			<key code="126" output="&#x1E;" />
 		</keyMap>
 		<keyMap index="1">
-			<key code="0" action="a6" />
-			<key code="1" action="a9" />
-			<key code="2" action="a7" />
-			<key code="3" action="a10" />
+			<key code="0" action="A" />
+			<key code="1" action="O" />
+			<key code="2" action="E" />
+			<key code="3" action="U" />
 			<key code="4" output="D" />
-			<key code="5" action="a8" />
-			<key code="6" output="&#x22;" />
+			<key code="5" action="I" />
+			<key code="6" action="quote" />
 			<key code="7" output="Q" />
 			<key code="8" output="J" />
 			<key code="9" output="K" />
-			<key code="10" output="&#x7E;" />
+			<key code="10" action="tilde" />
 			<key code="11" output="X" />
 			<key code="12" output=":" />
 			<key code="13" output="&#x3C;" />
@@ -172,20 +172,20 @@
 			<key code="21" output="3" />
 			<key code="22" output="9" />
 			<key code="23" output="1" />
-			<key code="24" output="`" />
+			<key code="24" action="grave" />
 			<key code="25" output="4" />
 			<key code="26" output="0" />
 			<key code="27" output="8" />
 			<key code="28" output="2" />
 			<key code="29" output="6" />
-			<key code="30" output="^" />
+			<key code="30" action="circum" />
 			<key code="31" output="R" />
 			<key code="32" output="G" />
 			<key code="33" output="?" />
 			<key code="34" output="C" />
 			<key code="35" output="L" />
 			<key code="36" output="&#xD;" />
-			<key code="37" action="a17" />
+			<key code="37" action="N" />
 			<key code="38" output="H" />
 			<key code="39" output="_" />
 			<key code="40" output="T" />
@@ -197,8 +197,8 @@
 			<key code="46" output="M" />
 			<key code="47" output="V" />
 			<key code="48" output="&#x9;" />
-			<key code="49" action="a16" />
-			<key code="50" output="~" />
+			<key code="49" action="space" />
+			<key code="50" action="compose" />
 			<key code="51" output="&#x8;" />
 			<key code="52" output="&#x3;" />
 			<key code="53" output="&#x1B;" />
@@ -223,9 +223,9 @@
 			<key code="84" output="x" />
 			<key code="85" output=":" />
 			<key code="86" output="D" />
-			<key code="87" action="a7" />
+			<key code="87" action="E" />
 			<key code="88" output="F" />
-			<key code="89" action="a6" />
+			<key code="89" action="A" />
 			<!-- gap, 90 -->
 			<key code="91" output="B" />
 			<key code="92" output="C" />
@@ -237,9 +237,9 @@
 			<key code="99" output="&#x10;" />
 			<key code="100" output="&#x10;" />
 			<key code="101" output="&#x10;" />
-			<key code="102" action="a16" />
+			<key code="102" action="space" />
 			<key code="103" output="&#x10;" />
-			<key code="104" action="a16" />
+			<key code="104" action="space" />
 			<key code="105" output="&#x10;" />
 			<key code="106" output="&#x10;" />
 			<key code="107" output="&#x10;" />
@@ -264,20 +264,20 @@
 			<key code="126" output="&#x1E;" />
 		</keyMap>
 		<keyMap index="2">
-			<key code="0" action="a6" />
-			<key code="1" action="a9" />
-			<key code="2" action="a7" />
-			<key code="3" action="a10" />
+			<key code="0" action="A" />
+			<key code="1" action="O" />
+			<key code="2" action="E" />
+			<key code="3" action="U" />
 			<key code="4" output="D" />
-			<key code="5" action="a8" />
-			<key code="6" output="'" />
+			<key code="5" action="I" />
+			<key code="6" action="apostrophe" />
 			<key code="7" output="Q" />
 			<key code="8" output="J" />
 			<key code="9" output="K" />
-			<key code="10" output="&#x24;" />
+			<key code="10" output="$" />
 			<key code="11" output="X" />
 			<key code="12" output=";" />
-			<key code="13" output="," />
+			<key code="13" action="comma" />
 			<key code="14" output="." />
 			<key code="15" output="P" />
 			<key code="16" output="F" />
@@ -288,7 +288,7 @@
 			<key code="21" output="3" />
 			<key code="22" output="9" />
 			<key code="23" output="1" />
-			<key code="24" output="`" />
+			<key code="24" action="grave" />
 			<key code="25" output="4" />
 			<key code="26" output="0" />
 			<key code="27" output="8" />
@@ -301,7 +301,7 @@
 			<key code="34" output="C" />
 			<key code="35" output="L" />
 			<key code="36" output="&#xD;" />
-			<key code="37" action="a17" />
+			<key code="37" action="N" />
 			<key code="38" output="H" />
 			<key code="39" output="-" />
 			<key code="40" output="T" />
@@ -313,8 +313,8 @@
 			<key code="46" output="M" />
 			<key code="47" output="V" />
 			<key code="48" output="&#x9;" />
-			<key code="49" action="a16" />
-			<key code="50" output="$" />
+			<key code="49" action="space" />
+			<key code="50" action="compose" />
 			<key code="51" output="&#x8;" />
 			<key code="52" output="&#x3;" />
 			<key code="53" output="&#x1B;" />
@@ -365,9 +365,9 @@
 			<key code="99" output="&#x10;" />
 			<key code="100" output="&#x10;" />
 			<key code="101" output="&#x10;" />
-			<key code="102" action="a16" />
+			<key code="102" action="space" />
 			<key code="103" output="&#x10;" />
-			<key code="104" action="a16" />
+			<key code="104" action="space" />
 			<key code="105" output="&#x10;" />
 			<key code="106" output="&#x10;" />
 			<key code="107" output="&#x10;" />
@@ -394,10 +394,10 @@
 		<keyMap index="3">
 			<key code="0" output="&#xE5;" />
 			<key code="1" output="&#xF8;" />
-			<key code="2" action="a2" />
-			<key code="3" action="a5" />
+			<key code="2" action="e" />
+			<key code="3" action="u" />
 			<key code="4" output="&#x2202;" />
-			<key code="5" action="a3" />
+			<key code="5" action="i" />
 			<key code="6" output="&#x2026;" />
 			<key code="7" output="&#x153;" />
 			<key code="8" output="&#x2206;" />
@@ -429,7 +429,7 @@
 			<key code="34" output="&#xE7;" />
 			<key code="35" output="&#xAC;" />
 			<key code="36" output="&#xD;" />
-			<key code="37" action="a4" />
+			<key code="37" action="n" />
 			<key code="38" output="&#x2D9;" />
 			<key code="39" output="&#x2013;" />
 			<key code="40" output="&#x2020;" />
@@ -442,7 +442,7 @@
 			<key code="47" output="&#x221A;" />
 			<key code="48" output="&#x9;" />
 			<key code="49" output="&#xA0;" />
-			<key code="50" action="a1" />
+			<key code="50" action="compose" />
 			<key code="51" output="&#x8;" />
 			<key code="52" output="&#x3;" />
 			<key code="53" output="&#x1B;" />
@@ -481,9 +481,9 @@
 			<key code="99" output="&#x10;" />
 			<key code="100" output="&#x10;" />
 			<key code="101" output="&#x10;" />
-			<key code="102" action="a16" />
+			<key code="102" action="space" />
 			<key code="103" output="&#x10;" />
-			<key code="104" action="a16" />
+			<key code="104" action="space" />
 			<key code="105" output="&#x10;" />
 			<key code="106" output="&#x10;" />
 			<key code="107" output="&#x10;" />
@@ -518,7 +518,7 @@
 			<key code="7" output="&#x152;" />
 			<key code="8" output="&#xD4;" />
 			<key code="9" output="&#xF8FF;" />
-			<key code="10" output="&#x7E;" />
+			<key code="10" action="tilde" />
 			<key code="11" output="&#x2DB;" />
 			<key code="12" output="&#xC6;" />
 			<key code="13" output="&#xAF;" />
@@ -558,7 +558,7 @@
 			<key code="47" output="&#x25CA;" />
 			<key code="48" output="&#x9;" />
 			<key code="49" output="&#xA0;" />
-			<key code="50" output="`" />
+			<key code="50" action="compose" />
 			<key code="51" output="&#x8;" />
 			<key code="52" output="&#x3;" />
 			<key code="53" output="&#x1B;" />
@@ -597,9 +597,9 @@
 			<key code="99" output="&#x10;" />
 			<key code="100" output="&#x10;" />
 			<key code="101" output="&#x10;" />
-			<key code="102" action="a16" />
+			<key code="102" action="space" />
 			<key code="103" output="&#x10;" />
-			<key code="104" action="a16" />
+			<key code="104" action="space" />
 			<key code="105" output="&#x10;" />
 			<key code="106" output="&#x10;" />
 			<key code="107" output="&#x10;" />
@@ -626,10 +626,10 @@
 		<keyMap index="5">
 			<key code="0" output="&#xC5;" />
 			<key code="1" output="&#xD8;" />
-			<key code="2" action="a2" />
-			<key code="3" action="a5" />
+			<key code="2" action="e" />
+			<key code="3" action="u" />
 			<key code="4" output="&#xCE;" />
-			<key code="5" action="a3" />
+			<key code="5" action="i" />
 			<key code="6" output="&#x2026;" />
 			<key code="7" output="&#x152;" />
 			<key code="8" output="&#xD4;" />
@@ -674,7 +674,7 @@
 			<key code="47" output="&#x221A;" />
 			<key code="48" output="&#x9;" />
 			<key code="49" output="&#xA0;" />
-			<key code="50" action="a1" />
+			<key code="50" action="compose" />
 			<key code="51" output="&#x8;" />
 			<key code="52" output="&#x3;" />
 			<key code="53" output="&#x1B;" />
@@ -713,9 +713,9 @@
 			<key code="99" output="&#x10;" />
 			<key code="100" output="&#x10;" />
 			<key code="101" output="&#x10;" />
-			<key code="102" action="a16" />
+			<key code="102" action="space" />
 			<key code="103" output="&#x10;" />
-			<key code="104" action="a16" />
+			<key code="104" action="space" />
 			<key code="105" output="&#x10;" />
 			<key code="106" output="&#x10;" />
 			<key code="107" output="&#x10;" />
@@ -740,12 +740,12 @@
 			<key code="126" output="&#x1E;" />
 		</keyMap>
 		<keyMap index="6">
-			<key code="0" action="a11" />
-			<key code="1" action="a14" />
-			<key code="2" action="a12" />
-			<key code="3" action="a15" />
+			<key code="0" action="a" />
+			<key code="1" action="o" />
+			<key code="2" action="e" />
+			<key code="3" action="u" />
 			<key code="4" output="d" />
-			<key code="5" action="a13" />
+			<key code="5" action="i" />
 			<key code="6" output=";" />
 			<key code="7" output="q" />
 			<key code="8" output="j" />
@@ -777,7 +777,7 @@
 			<key code="34" output="c" />
 			<key code="35" output="l" />
 			<key code="36" output="&#xD;" />
-			<key code="37" action="a18" />
+			<key code="37" action="n" />
 			<key code="38" output="h" />
 			<key code="39" output="-" />
 			<key code="40" output="t" />
@@ -789,8 +789,8 @@
 			<key code="46" output="m" />
 			<key code="47" output="v" />
 			<key code="48" output="&#x9;" />
-			<key code="49" action="a16" />
-			<key code="50" output="`" />
+			<key code="49" action="space" />
+			<key code="50" action="compose" />
 			<key code="51" output="&#x8;" />
 			<key code="52" output="&#x3;" />
 			<key code="53" output="&#x1B;" />
@@ -828,9 +828,9 @@
 			<key code="99" output="&#x10;" />
 			<key code="100" output="&#x10;" />
 			<key code="101" output="&#x10;" />
-			<key code="102" action="a16" />
+			<key code="102" action="space" />
 			<key code="103" output="&#x10;" />
-			<key code="104" action="a16" />
+			<key code="104" action="space" />
 			<key code="105" output="&#x10;" />
 			<key code="106" output="&#x10;" />
 			<key code="107" output="&#x10;" />
@@ -919,9 +919,9 @@
 			<key code="99" output="&#x10;" />
 			<key code="100" output="&#x10;" />
 			<key code="101" output="&#x10;" />
-			<key code="102" action="a16" />
+			<key code="102" action="space" />
 			<key code="103" output="&#x10;" />
-			<key code="104" action="a16" />
+			<key code="104" action="space" />
 			<key code="105" output="&#x10;" />
 			<key code="106" output="&#x10;" />
 			<key code="107" output="&#x10;" />
@@ -947,117 +947,141 @@
 		</keyMap>
 	</keyMapSet>
 	<actions>
-		<action id="a1">
-			<when state="none" next="s1" />
+		<action id="compose">
+			<when state="none" next="dead-compose" />
 		</action>
-		<action id="a2">
-			<when state="none" next="s2" />
+		<action id="grave">
+			<when state="none" output="`" />
+			<when state="dead-compose" next="dead-grave" />
 		</action>
-		<action id="a3">
-			<when state="none" next="s3" />
+		<action id="apostrophe">
+			<when state="none" output="'" />
+			<when state="dead-compose" next="dead-acute" />
 		</action>
-		<action id="a4">
-			<when state="none" next="s4" />
+		<action id="circum">
+			<when state="none" output="^" />
+			<when state="dead-compose" next="dead-circum" />
 		</action>
-		<action id="a5">
-			<when state="none" next="s5" />
+		<action id="tilde">
+			<when state="none" output="~" />
+			<when state="dead-compose" next="dead-tilde" />
 		</action>
-		<action id="a6">
+		<action id="quote">
+			<when state="none" output="&#x22;" />
+			<when state="dead-compose" next="dead-diaeresis" />
+		</action>
+		<action id="comma">
+			<when state="none" output="," />
+			<when state="dead-compose" next="dead-cedilla" />
+		</action>
+		<action id="A">
 			<when state="none" output="A" />
-			<when state="s1" output="&#xC0;" />
-			<when state="s2" output="&#xC1;" />
-			<when state="s3" output="&#xC2;" />
-			<when state="s4" output="&#xC3;" />
-			<when state="s5" output="&#xC4;" />
+			<when state="dead-grave" output="&#xC0;" />
+			<when state="dead-acute" output="&#xC1;" />
+			<when state="dead-circum" output="&#xC2;" />
+			<when state="dead-tilde" output="&#xC3;" />
+			<when state="dead-diaeresis" output="&#xC4;" />
 		</action>
-		<action id="a7">
+		<action id="E">
 			<when state="none" output="E" />
-			<when state="s1" output="&#xC8;" />
-			<when state="s2" output="&#xC9;" />
-			<when state="s3" output="&#xCA;" />
-			<when state="s5" output="&#xCB;" />
+			<when state="dead-grave" output="&#xC8;" />
+			<when state="dead-acute" output="&#xC9;" />
+			<when state="dead-circum" output="&#xCA;" />
+			<when state="dead-diaeresis" output="&#xCB;" />
 		</action>
-		<action id="a8">
+		<action id="I">
 			<when state="none" output="I" />
-			<when state="s1" output="&#xCC;" />
-			<when state="s2" output="&#xCD;" />
-			<when state="s3" output="&#xCE;" />
-			<when state="s5" output="&#xCF;" />
+			<when state="dead-grave" output="&#xCC;" />
+			<when state="dead-acute" output="&#xCD;" />
+			<when state="dead-circum" output="&#xCE;" />
+			<when state="dead-diaeresis" output="&#xCF;" />
 		</action>
-		<action id="a9">
+		<action id="O">
 			<when state="none" output="O" />
-			<when state="s1" output="&#xD2;" />
-			<when state="s2" output="&#xD3;" />
-			<when state="s3" output="&#xD4;" />
-			<when state="s4" output="&#xD5;" />
-			<when state="s5" output="&#xD6;" />
+			<when state="dead-grave" output="&#xD2;" />
+			<when state="dead-acute" output="&#xD3;" />
+			<when state="dead-circum" output="&#xD4;" />
+			<when state="dead-tilde" output="&#xD5;" />
+			<when state="dead-diaeresis" output="&#xD6;" />
 		</action>
-		<action id="a10">
+		<action id="U">
 			<when state="none" output="U" />
-			<when state="s1" output="&#xD9;" />
-			<when state="s2" output="&#xDA;" />
-			<when state="s3" output="&#xDB;" />
-			<when state="s5" output="&#xDC;" />
+			<when state="dead-grave" output="&#xD9;" />
+			<when state="dead-acute" output="&#xDA;" />
+			<when state="dead-circum" output="&#xDB;" />
+			<when state="dead-diaeresis" output="&#xDC;" />
 		</action>
-		<action id="a11">
+		<action id="a">
 			<when state="none" output="a" />
-			<when state="s1" output="&#xE0;" />
-			<when state="s2" output="&#xE1;" />
-			<when state="s3" output="&#xE2;" />
-			<when state="s4" output="&#xE3;" />
-			<when state="s5" output="&#xE4;" />
+			<when state="dead-grave" output="&#xE0;" />
+			<when state="dead-acute" output="&#xE1;" />
+			<when state="dead-circum" output="&#xE2;" />
+			<when state="dead-tilde" output="&#xE3;" />
+			<when state="dead-diaeresis" output="&#xE4;" />
 		</action>
-		<action id="a12">
+		<action id="e">
 			<when state="none" output="e" />
-			<when state="s1" output="&#xE8;" />
-			<when state="s2" output="&#xE9;" />
-			<when state="s3" output="&#xEA;" />
-			<when state="s5" output="&#xEB;" />
+			<when state="dead-grave" output="&#xE8;" />
+			<when state="dead-acute" output="&#xE9;" />
+			<when state="dead-circum" output="&#xEA;" />
+			<when state="dead-diaeresis" output="&#xEB;" />
 		</action>
-		<action id="a13">
+		<action id="i">
 			<when state="none" output="i" />
-			<when state="s1" output="&#xEC;" />
-			<when state="s2" output="&#xED;" />
-			<when state="s3" output="&#xEE;" />
-			<when state="s5" output="&#xEF;" />
+			<when state="dead-grave" output="&#xEC;" />
+			<when state="dead-acute" output="&#xED;" />
+			<when state="dead-circum" output="&#xEE;" />
+			<when state="dead-diaeresis" output="&#xEF;" />
 		</action>
-		<action id="a14">
+		<action id="o">
 			<when state="none" output="o" />
-			<when state="s1" output="&#xF2;" />
-			<when state="s2" output="&#xF3;" />
-			<when state="s3" output="&#xF4;" />
-			<when state="s4" output="&#xF5;" />
-			<when state="s5" output="&#xF6;" />
+			<when state="dead-grave" output="&#xF2;" />
+			<when state="dead-acute" output="&#xF3;" />
+			<when state="dead-circum" output="&#xF4;" />
+			<when state="dead-tilde" output="&#xF5;" />
+			<when state="dead-diaeresis" output="&#xF6;" />
 		</action>
-		<action id="a15">
+		<action id="u">
 			<when state="none" output="u" />
-			<when state="s1" output="&#xF9;" />
-			<when state="s2" output="&#xFA;" />
-			<when state="s3" output="&#xFB;" />
-			<when state="s5" output="&#xFC;" />
+			<when state="dead-grave" output="&#xF9;" />
+			<when state="dead-acute" output="&#xFA;" />
+			<when state="dead-circum" output="&#xFB;" />
+			<when state="dead-diaeresis" output="&#xFC;" />
 		</action>
-		<action id="a16">
-			<when state="none" output=" " />
-			<when state="s1" output="`" />
-			<when state="s2" output="&#xB4;" />
-			<when state="s3" output="&#x2C6;" />
-			<when state="s4" output="&#x2DC;" />
-			<when state="s5" output="&#xA8;" />
+		<action id="C">
+			<when state="none" output="C" />
+			<when state="dead-cedilla" output="&#xC7;" />
 		</action>
-		<action id="a17">
+		<action id="c">
+			<when state="none" output="c" />
+			<when state="dead-cedilla" output="&#xE7;" />
+		</action>
+		<action id="N">
 			<when state="none" output="N" />
-			<when state="s4" output="&#xD1;" />
+			<when state="dead-tilde" output="&#xD1;" />
 		</action>
-		<action id="a18">
+		<action id="n">
 			<when state="none" output="n" />
-			<when state="s4" output="&#xF1;" />
+			<when state="dead-tilde" output="&#xF1;" />
+		</action>
+		<action id="space">
+			<when state="none" output=" " />
+			<when state="dead-compose" output="" />
+			<when state="dead-grave" output="`" />
+			<when state="dead-acute" output="&#xB4;" />
+			<when state="dead-circum" output="&#x2C6;" />
+			<when state="dead-tilde" output="&#x2DC;" />
+			<when state="dead-diaeresis" output="&#xA8;" />
+			<when state="dead-cedilla" output="&#xB8;" />
 		</action>
 	</actions>
 	<terminators>
-		<when state="s1" output="`" />
-		<when state="s2" output="&#xB4;" />
-		<when state="s3" output="&#x2C6;" />
-		<when state="s4" output="&#x2DC;" />
-		<when state="s5" output="&#xA8;" />
+		<when state="dead-compose" output="" />
+		<when state="dead-grave" output="`" />
+		<when state="dead-acute" output="&#xB4;" />
+		<when state="dead-circum" output="&#x2C6;" />
+		<when state="dead-tilde" output="&#x2DC;" />
+		<when state="dead-diaeresis" output="&#xA8;" />
+		<when state="dead-cedilla" output="&#xB8;" />
 	</terminators>
 </keyboard>
