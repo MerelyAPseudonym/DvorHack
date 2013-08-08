@@ -1,9 +1,9 @@
 #!/bin/sh
 set -e -x
-LAYOUT="Programmer Dvorak"
+LAYOUT="DvorHack"
 LANGUAGE=en
 VERSION=1.2
-COPYRIGHT="Copyright 1997--2017 (c) Roland Kaufmann"
+COPYRIGHT="Copyright 1997--2017 (c) Roland Kaufmann (sans the fiddlings by Josh Tilles. Who knows what the legal status of those should be.)"
 
 # copy files from where this script is located
 pushd $(dirname $0)

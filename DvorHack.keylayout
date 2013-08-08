@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
-<keyboard group="0" id="6454" name="Programmer Dvorak" maxout="1">
+<keyboard group="0" id="7565" name="DvorHack" maxout="1">
   <layouts>
 	<!-- http://developer.apple.com/library/mac/documentation/Carbon/Reference/Gestalt_Manager/Reference/reference.html#//apple_ref/doc/uid/TP30000036-CH4g-KeyboardSelectors -->
 	<!-- identifiers in Gestalt.h has been used to determine the type of
