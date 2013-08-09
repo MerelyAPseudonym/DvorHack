@@ -89,7 +89,7 @@
 	<!-- and http://lists.apple.com/archives/carbon-dev/2009/Jan/msg00101.html -->
 	<keyMap index="0">
 	  <!-- number row -->
-	  <key code="50"  output="&#x24;"/>	<!-- left pinky 3	-->
+	  <key code="50"  output="&#x60;"/>	<!-- left pinky 3	-->
 	  <key code="18"  output="&#x26;"/>	<!-- left pinky 2 	-->
 	  <key code="19"  output="["/>			<!-- left pinky 1 	-->
 	  <key code="20"  output="{"/>			<!-- left ring 		-->	  
@@ -230,7 +230,7 @@
 	  <key code="25"  output="4"/>			<!-- right middle 	-->
 	  <key code="29"  output="6"/>			<!-- right ring 	-->
 	  <key code="27"  output="8"/>			<!-- right pinky 1 	-->
-	  <key code="24"  action="backquote"/>	<!-- right pinky 2 	-->
+	  <key code="24"  output="&#x24;"/>	<!-- right pinky 2 	-->
 	  <key code="51"  output="&#x08;"/>		<!-- Backspace 		--><!--*-->
 
 	  <!-- top row -->
@@ -347,7 +347,7 @@
 	<!-- keys that are not affected by Caps Lock are marked with + -->
 	<keyMap index="2">
 	  <!-- number row -->
-	  <key code="50"  output="&#x24;"/>	<!-- left pinky 3 	--><!--+-->
+	  <key code="50"  action="backquote"/>	<!-- left pinky 3 	--><!--+-->
 	  <key code="18"  output="&#x26;"/>	<!-- left pinky 2 	--><!--+-->
 	  <key code="19"  output="7"/>			<!-- left pinky 1 	-->
 	  <key code="20"  output="5"/>			<!-- left ring 		-->	  
@@ -488,7 +488,7 @@
 	  <key code="25"  output="+"/>			<!-- right middle 	-->
 	  <key code="29"  output="]"/>			<!-- right ring 	-->
 	  <key code="27"  output="!"/>			<!-- right pinky 1 	-->
-	  <key code="24"  action="backquote"/>	<!-- right pinky 2 	--><!--@-->
+	  <key code="24"  output="&#x24;"/>	<!-- right pinky 2 	--><!--@-->
 	  <key code="51"  output="&#x08;"/>		<!-- Backspace 		-->
 
 	  <!-- top row -->
@@ -606,7 +606,7 @@
 	<!-- option, a.k.a. Alt Graph. starred entries indicate that they
 	     effectively unassigned and return the value of the normal map -->
 	<keyMap index="4">
-	  <key code="50"  action="nasal"/>		<!-- left pinky 3	-->
+	  <key code="50"  action="grave"/>		<!-- left pinky 3	-->
 	  <key code="18"  output="&#x26;"/>	<!-- left pinky 2 	--><!--*-->
 	  <key code="19"  output="&#xA4;"/>	<!-- left pinky 1 	-->
 	  <key code="20"  output="&#xA2;"/>	<!-- left ring 		-->
@@ -618,7 +618,7 @@
 	  <key code="25"  output="+"/>			<!-- right middle 	--><!--*-->
 	  <key code="29"  output="]"/>			<!-- right ring 	--><!--*-->
 	  <key code="27"  output="&#xA1;"/>	<!-- right pinky 1 	-->
-	  <key code="24"  action="grave"/>		<!-- right pinky 2 	-->
+	  <key code="24"  output="&#x24;"/>		<!-- right pinky 2 	--><!--*-->
 	  <key code="51"  output="&#x08;"/>		<!-- Backspace 		--><!--*-->
 
 	  <!-- top row -->
@@ -736,7 +736,7 @@
 	<!-- upper-case option, items marked with at sign is unchanged
 	     compared to the unshifted version -->
 	<keyMap index="5">
-	  <key code="50"  action="nasal"/>		<!-- left pinky 3	--><!--@-->
+	  <key code="50"  action="nasal"/>		<!-- left pinky 3	-->
 	  <key code="18"  output="&#x26;"/>	<!-- left pinky 2 	--><!--*-->
 	  <key code="19"  output="&#xA4;"/>	<!-- left pinky 1 	--><!--@-->
 	  <key code="20"  output="&#xA2;"/>	<!-- left ring 		--><!--@-->
@@ -748,7 +748,7 @@
 	  <key code="25"  output="+"/>			<!-- right middle 	--><!--*-->
 	  <key code="29"  output="]"/>			<!-- right ring 	--><!--*-->
 	  <key code="27"  output="&#xA1;"/>	<!-- right pinky 1 	--><!--@-->
-	  <key code="24"  action="grave"/>		<!-- right pinky 2 	--><!--@-->
+	  <key code="24"  output="&#x24;"/>		<!-- right pinky 2 	--><!--*-->
 	  <key code="51"  output="&#x08;"/>		<!-- Backspace 		--><!--*-->
 
 	  <!-- top row -->
@@ -866,7 +866,7 @@
 	<!-- option when caps lock is activated. those keys unaffected by
          caps lock (but by shift) is marked with plus sign -->
 	<keyMap index="6">
-	  <key code="50"  action="nasal"/>		<!-- left pinky 3	--><!--@-->
+	  <key code="50"  action="grave"/>		<!-- left pinky 3	--><!--@-->
 	  <key code="18"  output="&#x26;"/>	<!-- left pinky 2 	--><!--*-->
 	  <key code="19"  output="&#xA4;"/>	<!-- left pinky 1 	--><!--@-->
 	  <key code="20"  output="&#xA2;"/>	<!-- left ring 		--><!--@-->
@@ -878,7 +878,7 @@
 	  <key code="25"  output="+"/>			<!-- right middle 	--><!--*-->
 	  <key code="29"  output="]"/>			<!-- right ring 	--><!--*-->
 	  <key code="27"  output="&#xA1;"/>	<!-- right pinky 1 	--><!--@-->
-	  <key code="24"  action="grave"/>		<!-- right pinky 2 	--><!--@-->
+	  <key code="24"  output="&#x24;"/>		<!-- right pinky 2 	--><!--*-->
 	  <key code="51"  output="&#x08;"/>		<!-- Backspace 		--><!--*-->
 
 	  <!-- top row -->
