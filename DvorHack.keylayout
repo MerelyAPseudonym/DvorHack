@@ -106,7 +106,7 @@
 
 	  <!-- top row -->
 	  <key code="48"  output="&#x09;"/>		<!-- Tab 			-->
-	  <key code="12"  action="semi"/>		<!-- left pinky 	-->
+	  <key code="12"  action="colon"/>		<!-- left pinky 	-->
 	  <key code="13"  action="comma"/>		<!-- left ring 		-->	  
 	  <key code="14"  action="period"/>		<!-- left middle 	-->
 	  <key code="15"  output="p"/>			<!-- left index 1 	-->
@@ -235,7 +235,7 @@
 
 	  <!-- top row -->
 	  <key code="48"  output="&#x09;"/>		<!-- Tab 			--><!--*-->	  
-	  <key code="12"  action="colon"/>		<!-- left pinky 	-->
+	  <key code="12"  action="semi"/>		<!-- left pinky 	-->
 	  <key code="13"  action="less"/>		<!-- left ring 		-->
 	  <key code="14"  action="greater"/>	<!-- left middle 	-->
 	  <key code="15"  output="P"/>			<!-- left index 1 	-->
@@ -364,7 +364,7 @@
 
 	  <!-- top row -->
 	  <key code="48"  output="&#x09;"/>		<!-- Tab 			-->
-	  <key code="12"  action="semi"/>		<!-- left pinky 	--><!--+-->
+	  <key code="12"  action="colon"/>		<!-- left pinky 	--><!--+-->
 	  <key code="13"  action="comma"/>		<!-- left ring 		--><!--+-->
 	  <key code="14"  action="period"/>		<!-- left middle 	--><!--+-->
 	  <key code="15"  output="P"/>			<!-- left index 1 	-->
@@ -493,7 +493,7 @@
 
 	  <!-- top row -->
 	  <key code="48"  output="&#x09;"/>		<!-- Tab 			-->
-	  <key code="12"  action="colon"/>		<!-- left pinky 	--><!--@-->
+	  <key code="12"  action="semi"/>		<!-- left pinky 	--><!--@-->
 	  <key code="13"  action="less"/>		<!-- left ring 		--><!--@-->
 	  <key code="14"  action="greater"/>	<!-- left middle 	--><!--@-->
 	  <key code="15"  output="p"/>			<!-- left index 1 	-->
