@@ -1068,17 +1068,17 @@
 	  <key code="94"  action="compose"/>	<!-- ABNT kbds only -->
 	</keyMap>
 	<keyMap index="4" baseMapSet="ANSI" baseIndex="4">
-	  <key code="10"  output="nasal"/>
+	  <key code="10"  action="nasal"/>
 	  <key code="50"  action="compose"/>
 	  <key code="94"  action="compose"/>	<!-- ABNT kbds only -->
 	</keyMap>
 	<keyMap index="5" baseMapSet="ANSI" baseIndex="5">
-	  <key code="10"  output="nasal"/>
+	  <key code="10"  action="nasal"/>
 	  <key code="50"  action="compose"/>
 	  <key code="94"  action="compose"/>	<!-- ABNT kbds only -->
 	</keyMap>
 	<keyMap index="6" baseMapSet="ANSI" baseIndex="6">
-	  <key code="10"  output="nasal"/>
+	  <key code="10"  action="nasal"/>
 	  <key code="50"  action="compose"/>
 	  <key code="94"  action="compose"/>	<!-- ABNT kbds only -->
 	</keyMap>
