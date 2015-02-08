@@ -59,7 +59,9 @@ cp "$SRC_DIR/$LAYOUT.keylayout" "$LAYOUT.bundle/Contents/Resources/"
 # Install Keyboard Tools (needs Rosetta from Optional Installs) from:
 # http://developer.apple.com/fonts/fonttools/AppleFontToolSuite3.1.0.dmg.zip
 [ -x /usr/bin/klcompiler ] && /usr/bin/klcompiler "$SRC_DIR/$LAYOUT.keylayout" > /dev/null
-if [ -e "$SRC_DIR/$LAYOUT.icns" ]; then
+if [ -e "$SRC_DIR/$LAYOUT.png" ]; then
+  sips -s format icns "$SRC_DIR/$LAYOUT.png" --out "$LAYOUT.bundle/Contents/Resources/$LAYOUT.icns"
+elif [ -e "$SRC_DIR/$LAYOUT.icns" ]; then
   cp "$SRC_DIR/$LAYOUT.icns" "$LAYOUT.bundle/Contents/Resources/";
 fi
 
@@ -112,6 +114,8 @@ rm -rf "$TRANSLATED.src.zip"
 
 # create a packed file from the directory (use -k for .zip)
 ditto -c -k --noacl --sequesterRsrc --keepParent "$LAYOUT v$VERSION.pkg" "$TRANSLATED.pkg.zip"
+
+#hdiutil create --srcfolder "$LAYOUT v$VERSION.pkg" -format UDZO -volname "$LAYOUT v$VERSION" -o "$TRANSLATED.dmg"
 
 # create source distribution
 rm -rf "$LAYOUT.src"
