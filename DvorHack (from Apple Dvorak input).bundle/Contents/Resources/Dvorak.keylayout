@@ -1,6 +1,6 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
-<!--Last edited by Ukelele version 3.2.2.166 on 2017-03-06 at 23:13 (EST)-->
+<!--Last edited by Ukelele version 3.2.2.166 on 2017-03-06 at 23:17 (EST)-->
 <keyboard group="126" id="-19681" name="Dvorak" maxout="1">
 	<layouts>
 		<layout first="0" last="0" mapSet="a14" modifiers="f4"/>
@@ -235,17 +235,17 @@
 			<key code="16" output="F"/>
 			<key code="17" action="13"/>
 			<key code="18" output="!"/>
-			<key code="19" output="@"/>
-			<key code="20" output="#"/>
-			<key code="21" output="$"/>
-			<key code="22" output="^"/>
-			<key code="23" output="%"/>
+			<key code="19" output="7"/>
+			<key code="20" output="5"/>
+			<key code="21" output="3"/>
+			<key code="22" output="9"/>
+			<key code="23" output="1"/>
 			<key code="24" output="}"/>
-			<key code="25" output="("/>
-			<key code="26" output="&#x0026;"/>
-			<key code="27" output="{"/>
-			<key code="28" output="*"/>
-			<key code="29" output=")"/>
+			<key code="25" output="4"/>
+			<key code="26" output="0"/>
+			<key code="27" output="8"/>
+			<key code="28" output="2"/>
+			<key code="29" output="6"/>
 			<key code="30" output="+"/>
 			<key code="31" output="R"/>
 			<key code="32" output="G"/>
