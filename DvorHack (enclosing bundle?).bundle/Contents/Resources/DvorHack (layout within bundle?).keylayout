@@ -1,7 +1,7 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!--Created by Ukelele version 3.2.2.166 on 2017-02-26 at 22:35 (EST)-->
-<!--Last edited by Ukelele version 3.2.2.166 on 2017-03-06 at 23:07 (EST)-->
+<!--Last edited by Ukelele version 3.2.2.166 on 2017-03-06 at 23:09 (EST)-->
 <keyboard group="126" id="-31535" name="DvorHack (layout within bundle?)" maxout="1">
 	<layouts>
 		<layout first="0" last="17" mapSet="ANSI" modifiers="Modifiers"/>
@@ -57,18 +57,18 @@
 			<key code="15" output="p"/>
 			<key code="16" output="f"/>
 			<key code="17" output="y"/>
-			<key code="18" output="1"/>
-			<key code="19" output="2"/>
-			<key code="20" output="3"/>
-			<key code="21" output="4"/>
-			<key code="22" output="6"/>
-			<key code="23" output="5"/>
-			<key code="24" output="]"/>
-			<key code="25" output="9"/>
-			<key code="26" output="7"/>
-			<key code="27" output="["/>
-			<key code="28" output="8"/>
-			<key code="29" output="0"/>
+			<key code="18" output="&#x0026;"/>
+			<key code="19" output="["/>
+			<key code="20" output="{"/>
+			<key code="21" output="}"/>
+			<key code="22" output="="/>
+			<key code="23" output="("/>
+			<key code="24" output="#"/>
+			<key code="25" output="+"/>
+			<key code="26" output="*"/>
+			<key code="27" output="!"/>
+			<key code="28" output=")"/>
+			<key code="29" output="]"/>
 			<key code="30" output="="/>
 			<key code="31" output="r"/>
 			<key code="32" output="g"/>
@@ -89,7 +89,7 @@
 			<key code="47" output="v"/>
 			<key code="48" output="&#x0009;"/>
 			<key code="49" output=" "/>
-			<key code="50" output="`"/>
+			<key code="50" output="$"/>
 			<key code="51" output="&#x0008;"/>
 			<key code="53" output="&#x001B;"/>
 			<key code="64" output="&#x0010;"/>
@@ -161,13 +161,13 @@
 			<key code="15" output="P"/>
 			<key code="16" output="F"/>
 			<key code="17" output="Y"/>
-			<key code="18" output="!"/>
+			<key code="18" output="%"/>
 			<key code="19" output="7"/>
 			<key code="20" output="5"/>
 			<key code="21" output="3"/>
 			<key code="22" output="9"/>
 			<key code="23" output="1"/>
-			<key code="24" output="}"/>
+			<key code="24" output="`"/>
 			<key code="25" output="4"/>
 			<key code="26" output="0"/>
 			<key code="27" output="8"/>
