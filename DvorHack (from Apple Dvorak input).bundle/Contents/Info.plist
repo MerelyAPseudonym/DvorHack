@@ -8,10 +8,10 @@
 	<string>DvorHack (from Apple Dvorak input)</string>
 	<key>CFBundleVersion</key>
 	<string></string>
-	<key>KLInfo_Dvorak</key>
+	<key>KLInfo_DvorHack</key>
 	<dict>
 		<key>TISInputSourceID</key>
-		<string>org.sil.ukelele.keyboardlayout.dvorhack(fromappledvorakinput).dvorak</string>
+		<string>org.sil.ukelele.keyboardlayout.dvorhack(fromappledvorakinput).dvorhack</string>
 		<key>TISIntendedLanguage</key>
 		<string>en</string>
 	</dict>
