@@ -1,6 +1,6 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
-<!--Last edited by Ukelele version 3.2.0.154 on 2017-04-09 at 20:58 (EDT)-->
+<!--Last edited by Ukelele version 3.2.0.154 on 2017-04-09 at 21:03 (EDT)-->
 <keyboard group="126" id="-24392" name="DvorHack" maxout="1">
 	<layouts>
 		<layout first="0" last="0" mapSet="a14" modifiers="f4"/>
@@ -113,13 +113,13 @@
 			<key code="3" action="11"/>
 			<key code="4" output="d"/>
 			<key code="5" action="9"/>
-			<key code="6" output="&#x0027;"/>
+			<key code="6" output=":"/>
 			<key code="7" output="q"/>
 			<key code="8" output="j"/>
 			<key code="9" output="k"/>
 			<key code="10" output="§"/>
 			<key code="11" output="x"/>
-			<key code="12" output=":"/>
+			<key code="12" output="&#x0027;"/>
 			<key code="13" output=","/>
 			<key code="14" output="."/>
 			<key code="15" output="p"/>
@@ -222,13 +222,13 @@
 			<key code="3" action="6"/>
 			<key code="4" output="D"/>
 			<key code="5" action="4"/>
-			<key code="6" output="&#x0022;"/>
+			<key code="6" output=";"/>
 			<key code="7" output="Q"/>
 			<key code="8" output="J"/>
 			<key code="9" output="K"/>
 			<key code="10" output="±"/>
 			<key code="11" output="X"/>
-			<key code="12" output=";"/>
+			<key code="12" output="&#x0022;"/>
 			<key code="13" output="&#x003C;"/>
 			<key code="14" output="&#x003E;"/>
 			<key code="15" output="P"/>
@@ -876,13 +876,13 @@
 			<key code="3" output="&#x0015;"/>
 			<key code="4" output="&#x0004;"/>
 			<key code="5" output="&#x0009;"/>
-			<key code="6" output="&#x0027;"/>
+			<key code="6" output=":"/>
 			<key code="7" output="&#x0011;"/>
 			<key code="8" output="&#x000A;"/>
 			<key code="9" output="&#x000B;"/>
 			<key code="10" output="0"/>
 			<key code="11" output="&#x0018;"/>
-			<key code="12" output=":"/>
+			<key code="12" output="&#x0027;"/>
 			<key code="13" output=","/>
 			<key code="14" output="."/>
 			<key code="15" output="&#x0010;"/>
