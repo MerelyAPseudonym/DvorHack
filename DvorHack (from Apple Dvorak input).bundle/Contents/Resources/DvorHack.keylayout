@@ -876,13 +876,13 @@
 			<key code="3" output="&#x0015;"/>
 			<key code="4" output="&#x0004;"/>
 			<key code="5" output="&#x0009;"/>
-			<key code="6" output=";"/>
+			<key code="6" output="&#x0027;"/>
 			<key code="7" output="&#x0011;"/>
 			<key code="8" output="&#x000A;"/>
 			<key code="9" output="&#x000B;"/>
 			<key code="10" output="0"/>
 			<key code="11" output="&#x0018;"/>
-			<key code="12" output="&#x0027;"/>
+			<key code="12" output=";"/>
 			<key code="13" output=","/>
 			<key code="14" output="."/>
 			<key code="15" output="&#x0010;"/>
