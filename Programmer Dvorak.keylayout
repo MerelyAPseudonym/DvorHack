@@ -156,13 +156,12 @@
 
 	  <!-- numpad -->
 	  <key code="71"  output="&#x1B;"/>		<!-- Num Lock 		-->
-	  <key code="81"  output="/"/>			<!-- Num = 			-->
-	  <key code="75"  output="*"/>			<!-- Num / 			-->
-	  <key code="67"  output="-"/>			<!-- Num * 			-->
+	  <key code="75"  output="/"/>			<!-- Num / 			-->
+	  <key code="67"  output="*"/>			<!-- Num * 			-->
+	  <key code="78"  output="-"/>			<!-- Num - 			-->
 	  <key code="89"  output="1"/>			<!-- Num 7 			-->
 	  <key code="91"  output="2"/>			<!-- Num 8 			-->
 	  <key code="92"  output="3"/>			<!-- Num 9 			-->
-	  <key code="78"  output="+"/>			<!-- Num - 			-->
 	  <key code="86"  output="4"/>			<!-- Num 4 			-->
 	  <key code="87"  output="5"/>			<!-- Num 5 			-->
 	  <key code="88"  output="6"/>			<!-- Num 6 			-->
@@ -286,13 +285,12 @@
 
 	  <!-- numpad -->
 	  <key code="71"  output="&#x1B;"/>		<!-- Num Lock 		--><!--*-->
-	  <key code="81"  output="("/>			<!-- Num = 			-->
-	  <key code="75"  output=")"/>			<!-- Num / 			-->
-	  <key code="67"  output="$"/>			<!-- Num * 			-->
+	  <key code="75"  output="("/>			<!-- Num / 			-->
+	  <key code="67"  output=")"/>			<!-- Num * 			-->
+	  <key code="78"  output="$"/>			<!-- Num - 			-->
 	  <key code="89"  output="A"/>			<!-- Num 7 			-->
 	  <key code="91"  output="B"/>			<!-- Num 8 			-->
 	  <key code="92"  output="C"/>			<!-- Num 9 			-->
-	  <key code="78"  output=","/>			<!-- Num - 			-->
 	  <key code="86"  output="D"/>			<!-- Num 4 			-->
 	  <key code="87"  output="E"/>			<!-- Num 5 			-->
 	  <key code="88"  output="F"/>			<!-- Num 6 			-->
@@ -412,13 +410,12 @@
 
 	  <!-- numpad --><!--+-->
 	  <key code="71"  output="&#x1B;"/>		<!-- Num Lock 		-->
-	  <key code="81"  output="/"/>			<!-- Num = 			-->
-	  <key code="75"  output="*"/>			<!-- Num / 			-->
-	  <key code="67"  output="-"/>			<!-- Num * 			-->
+	  <key code="75"  output="/"/>			<!-- Num / 			-->
+	  <key code="67"  output="*"/>			<!-- Num * 			-->
+	  <key code="78"  output="-"/>			<!-- Num - 			-->
 	  <key code="89"  output="1"/>			<!-- Num 7 			-->
 	  <key code="91"  output="2"/>			<!-- Num 8 			-->
 	  <key code="92"  output="3"/>			<!-- Num 9 			-->
-	  <key code="78"  output="+"/>			<!-- Num - 			-->
 	  <key code="86"  output="4"/>			<!-- Num 4 			-->
 	  <key code="87"  output="5"/>			<!-- Num 5 			-->
 	  <key code="88"  output="6"/>			<!-- Num 6 			-->
@@ -546,13 +543,12 @@
 
 	  <!-- numpad -->
 	  <key code="71"  output="&#x1B;"/>		<!-- Num Lock 		-->
-	  <key code="81"  output="/"/>			<!-- Num = 			-->
-	  <key code="75"  output="*"/>			<!-- Num / 			-->
-	  <key code="67"  output="-"/>			<!-- Num * 			-->
+	  <key code="75"  output="/"/>			<!-- Num / 			-->
+	  <key code="67"  output="*"/>			<!-- Num * 			-->
+	  <key code="78"  output="-"/>			<!-- Num - 			-->
 	  <key code="89"  output="1"/>			<!-- Num 7 			-->
 	  <key code="91"  output="2"/>			<!-- Num 8 			-->
 	  <key code="92"  output="3"/>			<!-- Num 9 			-->
-	  <key code="78"  output="+"/>			<!-- Num - 			-->
 	  <key code="86"  output="4"/>			<!-- Num 4 			-->
 	  <key code="87"  output="5"/>			<!-- Num 5 			-->
 	  <key code="88"  output="6"/>			<!-- Num 6 			-->
@@ -677,13 +673,12 @@
 
 	  <!-- numpad -->
 	  <key code="71"  output="&#x1B;"/>		<!-- Num Lock       -->
-	  <key code="81"  output="/"/>			<!-- Num =          -->
-	  <key code="75"  output="*"/>			<!-- Num /          -->
-	  <key code="67"  output="-"/>			<!-- Num *          -->
+	  <key code="75"  output="/"/>			<!-- Num /          -->
+	  <key code="67"  output="*"/>			<!-- Num *          -->
+	  <key code="78"  output="-"/>			<!-- Num -          -->
 	  <key code="89"  output="1"/>			<!-- Num 7          -->
 	  <key code="91"  output="2"/>			<!-- Num 8          -->
 	  <key code="92"  output="3"/>			<!-- Num 9          -->
-	  <key code="78"  output="+"/>			<!-- Num -          -->
 	  <key code="86"  output="4"/>			<!-- Num 4          -->
 	  <key code="87"  output="5"/>			<!-- Num 5          -->
 	  <key code="88"  output="6"/>			<!-- Num 6          -->
@@ -808,13 +803,12 @@
 
 	  <!-- numpad -->
 	  <key code="71"  output="&#x1B;"/>		<!-- Num Lock       -->
-	  <key code="81"  output="/"/>			<!-- Num =          -->
-	  <key code="75"  output="*"/>			<!-- Num /          -->
-	  <key code="67"  output="-"/>			<!-- Num *          -->
+	  <key code="75"  output="/"/>			<!-- Num /          -->
+	  <key code="67"  output="*"/>			<!-- Num *          -->
+	  <key code="78"  output="-"/>			<!-- Num -          -->
 	  <key code="89"  output="1"/>			<!-- Num 7          -->
 	  <key code="91"  output="2"/>			<!-- Num 8          -->
 	  <key code="92"  output="3"/>			<!-- Num 9          -->
-	  <key code="78"  output="+"/>			<!-- Num -          -->
 	  <key code="86"  output="4"/>			<!-- Num 4          -->
 	  <key code="87"  output="5"/>			<!-- Num 5          -->
 	  <key code="88"  output="6"/>			<!-- Num 6          -->
@@ -939,13 +933,12 @@
 
 	  <!-- numpad -->
 	  <key code="71"  output="&#x1B;"/>		<!-- Num Lock       -->
-	  <key code="81"  output="/"/>			<!-- Num =          -->
-	  <key code="75"  output="*"/>			<!-- Num /          -->
-	  <key code="67"  output="-"/>			<!-- Num *          -->
+	  <key code="75"  output="/"/>			<!-- Num /          -->
+	  <key code="67"  output="*"/>			<!-- Num *          -->
+	  <key code="78"  output="-"/>			<!-- Num -          -->
 	  <key code="89"  output="1"/>			<!-- Num 7          -->
 	  <key code="91"  output="2"/>			<!-- Num 8          -->
 	  <key code="92"  output="3"/>			<!-- Num 9          -->
-	  <key code="78"  output="+"/>			<!-- Num -          -->
 	  <key code="86"  output="4"/>			<!-- Num 4          -->
 	  <key code="87"  output="5"/>			<!-- Num 5          -->
 	  <key code="88"  output="6"/>			<!-- Num 6          -->
@@ -1005,6 +998,15 @@
 	  <key code="19"  output="&#x1B;"/>		<!-- ctrl-[			-->
 	  <key code="29"  output="&#x1D;"/>		<!-- ctrl-]		 	-->
 	  <key code="51"  output="&#x7F;"/>		<!-- ctrl-Backspace -->
+
+	  <key code="20"  output="5"/>		  	<!-- left ring      -->
+	  <key code="21"  output="3"/>		  	<!-- left middle    -->
+	  <key code="23"  output="1"/>		  	<!-- left index 1   -->
+	  <key code="22"  output="9"/>		  	<!-- left index 2   -->
+	  <key code="26"  action="zero"/>	  	<!-- right index 2  -->
+	  <key code="28"  output="2"/>		  	<!-- right index 1  -->
+	  <key code="25"  output="4"/>		  	<!-- right middle   -->
+	  <key code="27"  output="8"/>		  	<!-- right pinky 1  -->
 
 	  <!-- top row -->
 	  <key code="15"  output="&#x10;"/>		<!-- ctrl-P		 	-->

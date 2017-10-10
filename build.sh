@@ -3,7 +3,7 @@ set -e -x
 LAYOUT="Programmer Dvorak"
 LANGUAGE=en
 VERSION=1.2
-COPYRIGHT="Copyright 1997--2012 (c) Roland Kaufmann"
+COPYRIGHT="Copyright 1997--2017 (c) Roland Kaufmann"
 
 # copy files from where this script is located
 pushd $(dirname $0)
@@ -71,13 +71,6 @@ NSHumanReadableCopyright = "$COPYRIGHT";
 "$LAYOUT" = "$LAYOUT";
 EOF
 
-# figure out where the /Developer directory is
-if [ -d /Applications/Xcode.app/Contents/Developer ]; then
-  DEVROOT=/Applications/Xcode.app/Contents
-else
-  DEVROOT=
-fi
-
 # try to figure out where PackageMaker from the Auxiliary Tools is
 if [ -d /Applications/Xcode.app/Contents/Applications/PackageMaker.app ]; then
   APPROOT=/Applications/Xcode.app/Contents/Applications
@@ -88,7 +81,7 @@ else
 fi
 
 # bundle bit must be set on the directory for it to be recognized as a bundle
-$DEVROOT/Developer/Tools/SetFile -a B "$LAYOUT.bundle"
+/usr/bin/SetFile -a B "$LAYOUT.bundle"
 
 # leave fakeroot
 popd
@@ -125,11 +118,11 @@ cp "$SRC_DIR/build.sh" "$LAYOUT.src"
 ditto -c -k --noacl --sequesterRsrc "$LAYOUT.src" "$TRANSLATED.src.zip"
 
 # sudo installer -pkg "$LAYOUT v$VERSION.pkg" -target /
-# lsbom -fls "/var/db/receipts/com.apple.keyboardlayout.$LAYOUT.bom"
+# lsbom -fls "/var/db/receipts/com.apple.keylayout.$LAYOUT.bom"
 
 # uninstall:
 # sudo rm -rf "/Library/Keyboard Layouts/$LAYOUT.bundle/"
-# sudo pkgutil --forget com.apple.keyboardlayout.$LAYOUT
+# sudo pkgutil --forget com.apple.keylayout.$LAYOUT
 # sudo rm /System/Library/Caches/com.apple.IntlDataCache.le*
 # rm /private/var/folders/*/*/-Caches-/com.apple.IntlDataCache.le*
 # sudo shutdown -r now
