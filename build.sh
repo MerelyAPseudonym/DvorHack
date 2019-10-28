@@ -3,7 +3,7 @@ set -e -x
 LAYOUT="Programmer Dvorak"
 LANGUAGE=en
 VERSION=1.2
-COPYRIGHT="Copyright 1997--2017 (c) Roland Kaufmann"
+COPYRIGHT="Copyright 1997--2019 (c) Roland Kaufmann"
 
 # copy files from where this script is located
 pushd $(dirname $0)
@@ -58,7 +58,8 @@ mkdir "$LAYOUT.bundle/Contents/Resources"
 cp "$SRC_DIR/$LAYOUT.keylayout" "$LAYOUT.bundle/Contents/Resources/"
 # Install Keyboard Tools (needs Rosetta from Optional Installs) from:
 # http://developer.apple.com/fonts/fonttools/AppleFontToolSuite3.1.0.dmg.zip
-[ -x /usr/bin/klcompiler ] && /usr/bin/klcompiler "$SRC_DIR/$LAYOUT.keylayout" > /dev/null
+KLCOMPILER="$(which klcompiler)"
+[ -x "${KLCOMPILER}" ] && "${KLCOMPILER}" "$SRC_DIR/$LAYOUT.keylayout" > /dev/null
 if [ -e "$SRC_DIR/$LAYOUT.png" ]; then
   sips -s format icns "$SRC_DIR/$LAYOUT.png" --out "$LAYOUT.bundle/Contents/Resources/$LAYOUT.icns"
 elif [ -e "$SRC_DIR/$LAYOUT.icns" ]; then
@@ -118,11 +119,11 @@ cp "$SRC_DIR/build.sh" "$LAYOUT.src"
 ditto -c -k --noacl --sequesterRsrc "$LAYOUT.src" "$TRANSLATED.src.zip"
 
 # sudo installer -pkg "$LAYOUT v$VERSION.pkg" -target /
-# lsbom -fls "/var/db/receipts/com.apple.keylayout.$LAYOUT.bom"
+# lsbom -fls "/var/db/receipts/com.apple.keyboardlayout.$LAYOUT.bom"
 
 # uninstall:
 # sudo rm -rf "/Library/Keyboard Layouts/$LAYOUT.bundle/"
-# sudo pkgutil --forget com.apple.keylayout.$LAYOUT
+# sudo pkgutil --forget com.apple.keyboardlayout.$LAYOUT
 # sudo rm /System/Library/Caches/com.apple.IntlDataCache.le*
 # rm /private/var/folders/*/*/-Caches-/com.apple.IntlDataCache.le*
 # sudo shutdown -r now

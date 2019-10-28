@@ -694,7 +694,7 @@
 	  <!--key code="59"  output=""/>		<! Left Control 	-->
 	  <!--key code="58"  output=""/>		<! Left Option 		-->
 	  <!--key code="55"  output=""/>		<! Left Command 	-->
-	  <key code="49"  action="space"/>		<!-- Spacebar 		-->
+	  <key code="49"  output="&#xA0;"/>		<!-- Spacebar       -->
 	  <!--key code="54"  output=""/>		<! Right Command 	-->
 	  <!--key code="61"  output=""/>		<! Right Option 	-->
 	  <!--key code="110" output=""/>		<! Contextual Menu 	-->
