@@ -8,5 +8,14 @@
 	<string>DvorHack</string>
 	<key>CFBundleVersion</key>
 	<string></string>
+	<key>KLInfo_DvorHack</key>
+	<dict>
+		<key>TICapsLockLanguageSwitchCapable</key>
+		<false/>
+		<key>TISInputSourceID</key>
+		<string>org.sil.ukelele.keyboardlayout.dvorhack.dvorhack</string>
+		<key>TISIntendedLanguage</key>
+		<string>en</string>
+	</dict>
 </dict>
 </plist>
