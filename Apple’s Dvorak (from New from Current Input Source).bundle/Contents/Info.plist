@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIdentifier</key>
-	<string>org.sil.ukelele.keyboardlayout.</string>
+	<string>org.sil.ukelele.keyboardlayout.apple’sdvorak(fromnewfromcurrentinputsource)</string>
 	<key>CFBundleName</key>
-	<string></string>
+	<string>Apple’s Dvorak (from New from Current Input Source)</string>
 	<key>CFBundleVersion</key>
 	<string></string>
 	<key>KLInfo_DvorakS copy</key>
@@ -13,7 +13,7 @@
 		<key>TICapsLockLanguageSwitchCapable</key>
 		<false/>
 		<key>TISInputSourceID</key>
-		<string>org.sil.ukelele.keyboardlayout..dvorakscopy</string>
+		<string>org.sil.ukelele.keyboardlayout.apple’sdvorak(fromnewfromcurrentinputsource).dvorakscopy</string>
 		<key>TISIntendedLanguage</key>
 		<string>en</string>
 	</dict>
