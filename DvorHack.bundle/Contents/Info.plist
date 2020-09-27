@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIdentifier</key>
-	<string>org.sil.ukelele.keyboardlayout.</string>
+	<string>org.sil.ukelele.keyboardlayout.dvorhack</string>
 	<key>CFBundleName</key>
-	<string></string>
+	<string>DvorHack</string>
 	<key>CFBundleVersion</key>
 	<string></string>
 </dict>
