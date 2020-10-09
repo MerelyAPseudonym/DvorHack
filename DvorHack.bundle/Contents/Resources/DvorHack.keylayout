@@ -1,7 +1,7 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
-<!--Last edited by Ukelele version 3.4.2.314 on 2020-09-27 at 17:43 (EDT)-->
-<keyboard group="126" id="-26154" name="DvorHack" maxout="1">
+<!--Last edited by Ukelele version 3.4.2.314 on 2020-10-08 at 18:03 (EDT)-->
+<keyboard group="126" id="-17911" name="DvorHack" maxout="1">
     <layouts>
         <!-- http://developer.apple.com/library/mac/documentation/Carbon/Reference/Gestalt_Manager/Reference/reference.html#//apple_ref/doc/uid/TP30000036-CH4g-KeyboardSelectors -->
         <!-- identifiers in Gestalt.h has been used to determine the type of
@@ -1751,6 +1751,8 @@
             <!-- ctrl-K		 	-->
             <key code="11" output="&#x0018;"/>
             <!-- ctrl-X		 	-->
+            <key code="13" output=","/>
+            <key code="14" output="."/>
             <key code="15" output="&#x0010;"/>
             <!-- ctrl-P		 	-->
             <key code="16" output="&#x0006;"/>
