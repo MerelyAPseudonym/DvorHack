@@ -7,7 +7,7 @@
 	<key>CFBundleName</key>
 	<string>DvorHack</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2</string>
 	<key>KLInfo_DvorHack</key>
 	<dict>
 		<key>TICapsLockLanguageSwitchCapable</key>
